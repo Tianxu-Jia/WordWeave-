@@ -1,4 +1,4 @@
-# WordWeave
+
 # WordWeave 🖋️
 
 **Craft Articles, Books, and Papers with Human-Guided AI Power**
