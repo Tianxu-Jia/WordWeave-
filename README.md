@@ -79,7 +79,9 @@ WordWeave is open-source and released under the MIT License. Feel free to use, m
 ## Contact
 Have questions or feedback? We’d love to hear from you!
 🐦 Twitter: @tianxu_jia
+
 LinkedIn: https://www.linkedin.com/in/tianxu-jia-a2787917/
+
 💬 Weichat: jiatianxu6688
 
 🌟 Why WordWeave?
