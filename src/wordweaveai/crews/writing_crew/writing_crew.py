@@ -1,9 +1,10 @@
-from crewai import Agent, Crew, Process, Task
+import os
+from crewai import Agent, Crew, Process, Task, LLM
 from crewai.project import CrewBase, agent, crew, task
 from crewai_tools import SerperDevTool
 from langchain_openai import ChatOpenAI
 
-from write_a_book_with_flows.types import Chapter
+from wordweaveai.types import Chapter
 
 
 @CrewBase
@@ -12,7 +13,12 @@ class WriteBookChapterCrew:
 
     agents_config = "config/agents.yaml"
     tasks_config = "config/tasks.yaml"
-    llm = ChatOpenAI(model="gpt-4o")
+    # llm = ChatOpenAI(model="gpt-4o")
+    deepseek_llm = LLM(
+        model="deepseek/deepseek-chat",
+        api_key=os.environ["DEEPSEEK_API_KEY"],
+        temperature=1.5,
+    )
 
     @agent
     def researcher(self) -> Agent:
@@ -20,14 +26,14 @@ class WriteBookChapterCrew:
         return Agent(
             config=self.agents_config["researcher"],
             tools=[search_tool],
-            llm=self.llm,
+            llm=self.deepseek_llm,
         )
 
     @agent
     def writer(self) -> Agent:
         return Agent(
             config=self.agents_config["writer"],
-            llm=self.llm,
+            llm=self.deepseek_llm,
         )
 
     @task
