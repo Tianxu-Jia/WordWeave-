@@ -1,4 +1,3 @@
-# Introduction to AI in 2024
 
 # Introduction to AI in 2024
 

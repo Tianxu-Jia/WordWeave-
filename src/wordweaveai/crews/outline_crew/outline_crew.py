@@ -14,7 +14,6 @@ class OutlineCrew:
 
     agents_config = "config/agents.yaml"
     tasks_config = "config/tasks.yaml"
-    # llm = ChatOpenAI(model="gpt-4o")
     deepseek_llm = LLM(
         model="deepseek/deepseek-chat",
         api_key=os.environ["DEEPSEEK_API_KEY"],

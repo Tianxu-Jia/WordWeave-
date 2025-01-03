@@ -32,24 +32,8 @@ WordWeaveAI is an innovative app that empowers writers, researchers, and creator
    git clone https://github.com/yourusername/WordWeaveAI.git
    cd WordWeaveAI
 
-Install the required dependencies:
+## TBD
 
-bash
-
-pip install -r requirements.txt
-Set up your API key:
-
-Rename .env.example to .env.
-
-Add your OpenAI API key (or other LLM provider) to the .env file.
-
-Running the App
-Start the app:
-
-bash
-
-python app.py
-Open your browser and navigate to http://localhost:5000.
 
 🛠️ How It Works
 WordWeaveAI uses a combination of human input and AI-generated suggestions to create content. Here’s the workflow:
@@ -92,12 +76,3 @@ Start weaving your words today!
 
 ---
 
-### Key Highlights of the README:
-1. **Engaging Title and Tagline:** Captures attention and explains the app’s purpose.
-2. **Features Section:** Highlights what makes the app unique and useful.
-3. **Getting Started Guide:** Provides clear instructions for setting up the app.
-4. **Contribution Section:** Encourages community involvement.
-5. **Contact Information:** Makes it easy for users and contributors to reach out.
-6. **Why WordWeave?** Adds a personal touch and explains the app’s value.
-
-Feel free to customize this template further to match your app’s branding and specific features. Let me know if you’d like help with anything else! 🚀
